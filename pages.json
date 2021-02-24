@@ -1,0 +1,190 @@
+{
+	"pages": [
+		{
+			 "path": "pages/login/login",
+				"style": {
+					"navigationBarTitleText": "登录",
+							"navigationBarTextStyle": "white",
+							"navigationBarBackgroundColor": "#000000",
+							"backgroundTextStyle": "dark",
+							"app-plus": {
+							        "animationType": "fade-in",
+							        "animationDuration": 300
+							    }
+			}
+		},
+		{
+			"path" : "pages/tabBar/personal/address-list/address-list",
+			"style": {
+				"navigationBarTitleText": "选择地址"
+			}
+		},
+		{
+			"path" : "pages/tabBar/personal/pay-success/pay-success",
+			"style": {
+				"navigationBarTitleText": "支付成功"
+			}
+		},
+		{
+			"path" : "pages/order/user_order",
+			"style": {
+				"navigationBarTitleText": "我的订单"
+			}
+		},
+		{
+			"path" : "pages/order/amount",
+			"style": {
+				"navigationBarTitleText": "订单支付"
+			}
+		},
+		{
+			"path" : "pages/order/order",
+			"style": {
+				"navigationBarTitleText": "确认订单"
+			}
+		},
+		{
+			"path" : "pages/tabBar/personal/deposit/deposit",
+			"style": {
+				"navigationBarTitleText": "账户与余额"
+			}
+		},
+		{
+			"path" : "pages/city/city",
+			"style": {
+				"navigationBarTitleText": "选择地址"
+			}
+		},
+		{ 
+			"path":"pages/goods/goods",
+			"style": {
+				"navigationBarTitleText": "商品详情"
+			}
+		},
+		{
+			"path" : "pages/tabBar/message/chat/chat",
+			"style" : {
+				"navigationBarBackgroundColor":"#f2f2f2",
+				"backgroundColorTop":"#e5e5e5",
+				"backgroundColorBottom":"#e5e5e5",
+				"app-plus":{
+					"softinputNavBar":"none",
+					"bounce":"none"
+				}
+			}
+			
+			
+		},
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/home/home",
+			"style": {
+				"navigationBarTextStyle":"white",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance":50,
+				"app-plus": {
+					"titleNView": false ,//禁用原生导航栏
+					"softinputNavBar":"none",
+					"subNVues":[{  
+						"id": "homeTitleNvue", // 唯一标识  
+						"path": "pages/tabBar/home/subNvue/homeTitleNvue", // 页面路径  
+						"type":"navigationBar"
+					}]
+				}
+			}
+		},
+		{
+		    "path" : "pages/goods/goods-list/good-list",
+		    "style" : {
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/publish/publish",
+			"style": {
+				"navigationBarTitleText": "发布"
+			}
+		},
+		{
+			"path": "pages/tabBar/personal/personal",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		},
+		 {
+			 "path": "pages/tabBar/discover/discover",
+			 "style": {
+			 	"navigationBarTitleText": "发现",
+			 	"enablePullDownRefresh": true,
+			 	"onReachBottomDistance":50
+			 }
+		 },
+		 {
+		 	 "path": "pages/tabBar/message/message",
+		 		"style": {
+		 			"navigationBarTitleText": "消息"
+		 	}
+		 },
+		 {
+		 	 "path": "pages/login/login",
+		 		"style": {
+		 			"navigationBarTitleText": "登录",
+					"navigationBarTextStyle": "white",
+					"navigationBarBackgroundColor": "#000000",
+					"backgroundTextStyle": "dark"
+		 	}
+		 },
+		 {
+		 	 "path": "pages/register/register",
+		 		"style": {
+		 			"navigationBarTitleText": "注册",
+		 					"navigationBarTextStyle": "white",
+		 					"navigationBarBackgroundColor": "#000000",
+		 					"backgroundTextStyle": "dark"
+		 	}
+		 }
+		
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+			"color":"#8a8a8a",
+			"selectedColor": "#1296db",
+			"borderStyle":"black",
+			"backgroundColor":"#FFFFFF",
+			"list":[
+				{
+					"pagePath":"pages/tabBar/home/home",
+					"iconPath":"static/main/home.png",
+					"selectedIconPath":"static/main/home-on.png",
+					"text":"首页"
+				},
+				{
+					"pagePath":"pages/tabBar/discover/discover",
+					"iconPath":"static/main/discover.png",
+					"selectedIconPath":"static/main/discover-on.png",
+					"text":"发现"
+				},
+				{
+					"pagePath":"pages/tabBar/message/message",
+					"iconPath":"static/main/message.png",
+					"selectedIconPath":"static/main/message-on.png",
+					"text":"消息"
+				},
+				{
+					"pagePath":"pages/tabBar/personal/personal",
+					"iconPath":"static/main/my.png",
+					"selectedIconPath":"static/main/my-on.png",
+					"text":"个人信息"
+				}
+			]
+		}
+}
